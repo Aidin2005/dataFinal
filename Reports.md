@@ -34,6 +34,42 @@ The dataset used in this analysis contains real estate listings from Bishkek, Ky
 The dataset was sourced from publicly available real estate listings and preprocessed to handle missing values and outliers.
 
 ---
+## 1. Data Collection
+
+To build a reliable house price prediction model, it is essential to collect high-quality and relevant datasets.  
+For this project, I focused on gathering data related to **real estate in Kyrgyzstan**, particularly in **Bishkek**,  
+as well as supporting datasets that reflect **economic** and **demographic indicators** that may influence housing prices.
+
+---
+
+### 🔹 Main Dataset
+
+- **Source**: *Kaggle / Local Open Data Portals / Real Estate Websites*  
+- https://www.kaggle.com/datasets/azamatkibekbaev/bishkek-house-price
+- **Filename**: `Bishkek.csv`  
+- **Description**: This dataset contains listings of apartments for sale in Bishkek.  
+  It includes the following features:
+
+| Column Name       | Description                                                 |
+|-------------------|-------------------------------------------------------------|
+| `price`           | Total price of the apartment (in KGS)                       |
+| `m2_price`        | Price per square meter                                      |
+| `square`          | Total area of the apartment in square meters                |
+| `rooms`           | Number of rooms                                             |
+| `district`        | Administrative district of Bishkek                          |
+| `micro_district`  | Sub-district or neighborhood within the city                |
+| `building_type`   | Type of the building (e.g., panel, brick, monolithic)       |
+| `floor`           | The floor the apartment is located on                       |
+| `floors`          | Total number of floors in the building                      |
+| `year`            | Year the building was constructed                           |
+| `date`            | Date the listing was posted                                 |
+| `source`          | Source website or platform from which the data was collected |
+| `condition`       | Condition of the apartment (e.g., renovated, under repair)  |
+
+---
+
+This dataset provides detailed property-level information,  
+which is essential for analyzing trends in the real estate market and for building accurate predictive models.
 
 ### **3. Data Analysis**
 
@@ -85,7 +121,41 @@ The dataset was sourced from publicly available real estate listings and preproc
   → Apartment prices differ **significantly** depending on the floor (**p ≈ 0.0006**).
 
 ---
+### Interpretation:
 
+- The analysis confirms that property size is the most critical factor influencing prices.
+- Other factors, such as location (district) and building type, also play significant roles.
+- The weak correlation of building age with price suggests it has minimal impact on valuation.
+
+This section should combine statistical insights with visual evidence to provide a comprehensive understanding of the dataset.
+
+---
+
+### Goal
+- Building a machine learning model to effectively predict prices based on relatively recent data and verifying that the apartment price is appropriate.
+
+---
+
+###  Problem that our project helps for solving
+1. **For Buyers**:  
+   - Helps identify fair property prices based on size, location, and condition.  
+   - Assists in comparing properties across districts and building types.  
+
+2. **For Sellers**:  
+   - Provides data-driven insights to set competitive prices.  
+   - Highlights factors that increase property value, such as renovations or location.  
+
+3. **For Policymakers**:  
+   - Offers a better understanding of housing trends and affordability.  
+   - Supports urban planning and housing policy development.  
+
+4. **For Investors**:  
+   - Identifies high-demand areas and profitable property types.  
+   - Assists in predicting future market trends.  
+
+By analyzing and predicting property prices, the project empowers stakeholders to make better financial and strategic decisions in Bishkek's real estate market.
+
+---
 
 ### **4. Visualizations**
 
